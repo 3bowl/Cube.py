@@ -6,10 +6,15 @@ Cube.py   --   A Python Rubik's Cube Simulator
 * Use standard move notation at the prompt:
 
   R, R', R2
+  
   U, U', U2
+  
   F, F', F2
+  
   L, L', L2
+  
   D, D', D2
+  
   B, B', B2
 
 * Input 'exit' (case-insensitively) to exit the program
