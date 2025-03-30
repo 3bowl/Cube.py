@@ -20,9 +20,9 @@ Cube.py   --   A Python Rubik's Cube Simulator
 
 * Both 'scramble' and 'solve' reset the movecount
 
-* '-Solved-' will appear when the cube is solved
-
 ***Features:***
+
+* '-Solved-' will appear when the cube is solved
 
 * Movecount counter
 
