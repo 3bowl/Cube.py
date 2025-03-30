@@ -137,26 +137,22 @@ def main():
             elif dir == 'EXIT':
                 sys.exit('-EXIT-')
             elif dir == 'SCRAMBLE':
+                movecount = 0
                 u_, l_, f_, r_, b_, d_ = scramble(u_, l_, f_, r_, b_, d_, all_moves)
             elif dir == 'SOLVE':
+                movecount = 0
                 u_, l_, f_, r_, b_, d_ = solve_cube(u_, l_, f_, r_, b_, d_)
             else:
+                movecount -= 1
                 continue
 
+        # displays '-Solved-' when solved
         cube_solved = check_solved(u_, l_, f_, r_, b_, d_)
         if cube_solved:
             solved = '-Solved-'
         else:
             solved = '        '
 
-        if move[0] in all_moves:
-            pass
-        elif move == ['SOLVE'] or move == ['SCRAMBLE'] or cube_solved:
-            movecount = 0
-        elif move[0].lower() in rotations:
-            pass
-        else:
-            movecount -= 1
         print_cube(u_, l_, f_, r_, b_, d_, solved, movecount)
 
 
